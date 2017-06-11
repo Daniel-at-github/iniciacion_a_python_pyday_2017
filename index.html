@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Daniel Sánchez">
+  <meta name="dcterms.date" content="2017-05-18">
+  <title>Iniciación a Python!</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="revealjs/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="revealjs/css/theme/white.css" id="theme">
+<link rel="stylesheet" href="markdownrevealstyle/custom.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="revealjs/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+<div class="logo"><img src="style/logo.svg" /></div>
+<div class="header">Iniciación a Python!</div>
+<div class="footer">Github | https://github.com/Daniel-at-github/iniciacion_a_python_pyday_2017</div>
+    <div class="slides">
+<section data-background="style/background.svg"><img src="style/warmup.svg" /></section>
+
+<section data-background="style/background.svg">
+  <h1 class="title">Iniciación a Python!</h1>
+  <h2 class="author">Daniel Sánchez</h2>
+  <h3 class="date">2017-05-18</h3>
+</section>
+
+<section id="quien-soy" class="slide level2">
+<h1>Quien soy</h1>
+<ul>
+<li>Trayectoria</li>
+<li>¿Por qués estoy aquí?</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Varios tipo de puestos y ahora Admin sistemas</li>
+<li>Automatización</li>
+<li>bash =&gt; perl =&gt; python</li>
+<li>Encuesta
+<ul>
+<li>Usado python</li>
+<li>Programado algo, tutorial, programa útil (propio, ajeno), por dinero.</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+<section data-background="style/background.svg"><section id="python" class="titleslide slide level1"><h1>Python</h1></section><section id="introducción" class="slide level2">
+<h1>Introducción</h1>
+<figure>
+<img src="./figures/Guido_van_Rossum.png" style="width:10.0%" />
+</figure>
+<ul>
+<li>Guido Van Rossum (Benevolent Dictator For Life)</li>
+<li>Fan de los Monty <strong>Python</strong></li>
+<li>Lenguage interpretado de propósito general</li>
+<li>Python 1.0 liberado en enero de 1994</li>
+<li>Versión actual Python3, manteniendo Python 2.7</li>
+</ul>
+</section><section id="características" class="slide level2">
+<h1>Características</h1>
+<ul>
+<li>Centrado en:
+<ul>
+<li>Recoge las mejores características de otros lenguages</li>
+<li>Facilidad de programacion</li>
+<li>Legibilidad</li>
+<li>Llama a lenguajes compilados si se necesita
+<ul>
+<li>C</li>
+<li>Fortran</li>
+</ul></li>
+<li>Batteries included</li>
+<li>Comunidad</li>
+</ul></li>
+</ul>
+</section><section id="impacto" class="slide level2">
+<h1>Impacto</h1>
+<ul>
+<li>Instalado por defecto en Linux, FreeBSD y Mac</li>
+<li>Multitud de ámbitos: Desarrollo web, Admin de sistemas, ámbito científico, GIS, Análisis de datos, IA, ...</li>
+<li>Más de 100.000 paquetes en PyPI (Indexador de paquetes)
+<ul>
+<li>Orientado a objetos</li>
+</ul></li>
+</ul>
+</section></section>
+<section data-background="style/background.svg"><section id="instalación" class="titleslide slide level1"><h1>Instalación</h1></section><section id="linux" class="slide level2">
+<h1>Linux</h1>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">python3</span> -V
+<span class="co"># Si no está instalado</span>
+<span class="kw">sudo</span> apt install python3</code></pre></div>
+</section><section id="windows" class="slide level2">
+<h1><a href="https://docs.python.org/3/using/windows.html#using-python-on-windows">Windows</a></h1>
+<ul>
+<li>En <a href="https://www.python.org/downloads/">www.python.org/downloads/</a>:
+<ul>
+<li>Escoger python3</li>
+<li>Descargar Windows executable installer (64 bits)</li>
+<li>Instalar</li>
+</ul></li>
+</ul>
+</section></section>
+<section data-background="style/background.svg"><section id="lenguage" class="titleslide slide level1"><h1>Lenguage</h1></section><section id="demo-python3" class="slide level2">
+<h1>Demo python3</h1>
+<ul>
+<li>Invocación del intérprete
+<ul>
+<li>Python</li>
+<li>Ipython</li>
+<li>Jupyter notebook</li>
+</ul></li>
+</ul>
+</section></section>
+<section data-background="style/background.svg"><section id="paquetes" class="titleslide slide level1"><h1>Paquetes</h1></section><section id="pip" class="slide level2">
+<h1>pip</h1>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pip</span> install ipython <span class="co"># Instala ipython</span>
+<span class="kw">pip</span> install --upgrade ipython <span class="co"># Actualiza ipython a la última versión</span>
+<span class="kw">pip</span> freeze <span class="kw">&gt;</span> requirements.txt <span class="co"># Guarda un listado de paquetes y versiones</span>
+<span class="kw">pip</span> uninstall ipython <span class="co"># Desinstala ipython </span>
+<span class="kw">pip</span> install --requirement requirements.txt <span class="co"># Instala los paquetesl del fichero</span></code></pre></div>
+</section><section id="virtualenv" class="slide level2">
+<h1>virtualenv</h1>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">python3</span> -m venv <span class="kw">&lt;</span>DIR<span class="kw">&gt;</span>
+<span class="kw">source</span> <span class="kw">&lt;</span>DIR<span class="kw">&gt;</span>/bin/activate
+<span class="co"># Usar los paquetes, instalarlos, desinstalarlos</span>
+<span class="kw">deactivate</span> <span class="co"># Si queremos salir del entorno</span></code></pre></div>
+</section><section id="virtualenvwrapper" class="slide level2">
+<h1>virtualenvwrapper</h1>
+<p><strong>Linux</strong></p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">sudo</span> apt get install virtualenvwrapper
+<span class="co"># Salir y entrar de la consola</span></code></pre></div>
+<p><strong>Windows</strong></p>
+<pre class="bat"><code>pip install virtualenvwrapper-win</code></pre>
+</section><section id="comandos-virtualenvwrapper" class="slide level2">
+<h1>comandos virtualenvwrapper</h1>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># Crear entorno</span>
+<span class="kw">which</span> python3
+<span class="kw">mkvirtualenv</span> --python=/usr/bin/python3 test
+
+<span class="kw">pip</span> install ipython
+
+<span class="kw">deactivate</span> <span class="co"># salir</span>
+<span class="kw">lsvirttualenv</span> <span class="co"># listar</span>
+<span class="kw">workon</span> test <span class="co"># Activar el entorno test</span>
+<span class="kw">...</span>
+<span class="kw">deactivate</span>
+<span class="kw">rmvirtualenv</span> test <span class="co"># Para borrarlo no podemos estar dentro</span></code></pre></div>
+</section></section>
+<section data-background="style/background.svg"><section id="recursos" class="titleslide slide level1"><h1>Recursos</h1></section><section id="documentación" class="slide level2">
+<h1>Documentación</h1>
+<ul>
+<li>Documentación oficial de Python<br />
+<a href="http://www.python.org/doc">https://www.python.org/doc</a></li>
+<li>Guı́a para principiantes<br />
+<a href="http://wiki.python.org/moin/BeginnersGuide">https://wiki.python.org/moin/BeginnersGuide</a></li>
+<li>Learn Python (Español)<br />
+<a href="http://www.learnpython.org/es/">https://www.learnpython.org/es/</a></li>
+<li>Traducción del manual de Guido van Rossum<br />
+<a href="http://docs.python.org.ar/tutorial/pdfs/TutorialPython2.pdf">https://docs.python.org.ar/tutorial/pdfs/TutorialPython2.pdf</a></li>
+<li><a href="http://interactivepython.org/runestone/static/thinkcspy/index.html">How to Think Like a Computer Scientist: Interactive Edition</a></li>
+</ul>
+</section><section id="web" class="slide level2">
+<h1>Web</h1>
+<ul>
+<li>Meetups:
+<ul>
+<li><a href="https://www.python-vigo.es/" class="uri">https://www.python-vigo.es/</a></li>
+<li><a href="http://vigotech.org" class="uri">http://vigotech.org</a></li>
+</ul></li>
+<li>Videos de charlas: <a href="https://pyvideo.org" class="uri">https://pyvideo.org</a> (más de 7000)</li>
+<li>Resumen de sintaxis: <a href="https://learnxinyminutes.com/docs/es-es/python3-es/">https://learnxinyminutes.com</a></li>
+<li>Ejemplos de proyectos: <a href="https://newcoder.io" class="uri">https://newcoder.io</a></li>
+<li>Podcasts:
+<ul>
+<li><a href="http://pythonbytes.fm/" class="uri">http://pythonbytes.fm/</a></li>
+<li><a href="https://talkpython.fm/" class="uri">https://talkpython.fm/</a></li>
+<li><a href="https://www.podcastinit.com/" class="uri">https://www.podcastinit.com/</a></li>
+<li><a href="http://pythontesting.net/" class="uri">http://pythontesting.net/</a></li>
+</ul></li>
+</ul>
+</section></section>
+<section data-background="style/background.svg"><section id="atribuciones" class="titleslide slide level1"><h1>Atribuciones</h1></section><section id="imágenes" class="slide level2">
+<h1>Imágenes</h1>
+<ul>
+<li>Foto de Guido van Rossum: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/250px-Guido_van_Rossum_OSCON_2006_cropped.png" class="uri">https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/250px-Guido_van_Rossum_OSCON_2006_cropped.png</a></li>
+</ul>
+</section><section id="software" class="slide level2">
+<h1>Software</h1>
+<ul>
+<li><a href="https://github.com/markdownreveal/markdownreveal">Markdownreveal</a> (Diapositivas html)</li>
+<li><a href="http://jupyter.org/">Jupyter notebook</a></li>
+<li><a href="https://ipython.org/">Ipython</a></li>
+</ul>
+</section></section>
+<section data-background="style/background.svg"><section id="preguntas" class="titleslide slide level1"><h1>Preguntas</h1></section></section>
+    </div>
+  </div>
+
+  <script src="revealjs/lib/js/head.min.js"></script>
+  <script src="revealjs/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'revealjs/plugin/zoom-js/zoom.js', async: true },
+          { src: 'revealjs/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
