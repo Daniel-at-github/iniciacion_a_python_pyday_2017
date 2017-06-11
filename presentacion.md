@@ -151,10 +151,17 @@ rmvirtualenv test # Para borrarlo no podemos estar dentro
     * [https://www.podcastinit.com/](https://www.podcastinit.com/)
     * [http://pythontesting.net/](http://pythontesting.net/)
 
-## Media
+# Atribuciones
 
-Imágenes:
+## Imágenes
 
-* [https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/250px-Guido_van_Rossum_OSCON_2006_cropped.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/250px-Guido_van_Rossum_OSCON_2006_cropped.png)
+* Foto de Guido van Rossum:  [https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/250px-Guido_van_Rossum_OSCON_2006_cropped.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Guido_van_Rossum_OSCON_2006_cropped.png/250px-Guido_van_Rossum_OSCON_2006_cropped.png)
+
+## Software
+
+* [Markdownreveal](https://github.com/markdownreveal/markdownreveal) (Diapositivas html)
+* [Jupyter notebook](http://jupyter.org/)
+* [Ipython](https://ipython.org/)
+
 
 # Preguntas
