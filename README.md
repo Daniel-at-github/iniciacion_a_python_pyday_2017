@@ -9,3 +9,5 @@ Material de la charla "Iniciación a Python!!" de https://pyday2017.python-vigo.
 * Jupyter notebook:
     * Versión estática vacia:  
       https://github.com/Daniel-at-github/iniciacion_a_python_pyday_2017/blob/master/Iniciacion_a_Python.ipynb
+* Video de la charla:  
+  http://pyvideo.org/pyday-galicia-2017/iniciacion-a-python.html
